@@ -1,0 +1,181 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting.",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?",
+        "Do you have any issues that you need to solve?"
+      ]
+    },
+    {
+      "tag": "yes",
+      "patterns": ["yes", "yea", "i did"],
+      "responses": [
+        "So, how can I help you?",
+        "Please give me your question.",
+        "How can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting.",
+        "Have a nice day!",
+        "Goodbye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!", "Thanks for your help."],
+      "responses": ["Happy to help!", "Any time!", "My pleasure."]
+    },
+    {
+      "tag": "login",
+      "patterns": [
+        "I can't log in.",
+        "Can you help me with login?",
+        "Login issues?",
+        "Login"
+      ],
+      "responses": [
+        "First, you need to register and input your email and password correctly.try to login again with the correct email and password. If you encounter an error again, you can call us at -------.",
+        "You need to register first. If you already have an account, make sure to input your email and password correctly."
+      ]
+    },
+    {
+      "tag": "register",
+      "patterns": [
+        "I can't register.",
+        "Register?",
+        "Need help with registering?",
+        "Register"
+      ],
+      "responses": [
+        "You have 1 Way to register. create an email and password in the system directly."
+      ]
+    },
+    {
+      "tag": "feedback",
+      "patterns": [
+        "How can I send feedback?",
+        "Is feedback helpful?",
+        "Feedback?"
+      ],
+      "responses": [
+        "The feedback button is located on your home page after you login. Click it and fill out the form to help us get better. Thank you!",
+        "Your feedback helps us improve the system and guides us to help you in future versions."
+      ]
+    },
+    {
+      "tag": "create report",
+      "patterns": [
+        "How can I create a report?",
+        "Creating a report."
+      ],
+      "responses": [
+        "After you login, you will go to the home page. You will see blank and template pages, and you can choose the one that fits your case. Then, you will choose the category that your report belongs to. Once you finish writing your report, you can save it, and it will be saved into the reports pages. You can edit or check it later. I hope this helps."
+      ]
+    },
+    {
+      "tag": "delete report",
+      "patterns": [
+      "How can I delete a report?",
+      "Deleting a report."
+      ],
+      "responses": [
+      "After creating and saving the report, it will be available on the 'Reports' page which can be accessed via the button on your homepage. Once on the 'Reports' page, you can select the report you wish to delete and click the 'Delete' button. The report will be permanently deleted. I hope this helps!"
+      ]
+      },
+      {
+      "tag": "admin and clerk",
+      "patterns": [
+      "Who are the admin and clerk?",
+      "How can I log in as admin or clerk?"
+      ],
+      "responses": [
+      "Sorry, but you cannot log in as an admin or clerk. The admin is responsible for managing the system, which includes adding and deleting users, while the clerk is responsible for improving the system based on feedback. I hope this helps clarify their roles. <3"
+      ]
+      },
+      {
+      "tag": "categories",
+      "patterns": [
+      "Why do I have to choose a category every time?",
+      "What is the purpose of the category?"
+      ],
+      "responses": [
+      "We have two categories in our system: Medical, Research, and Psychotherapy. These categories are used to help predict the next word you may need to type. If you require specific words related to medical or psychotherapy, please choose the respective category. If not, choose the general category for a broader range of word options. I hope this clears up any confusion. <3"
+      ]
+      },
+      {
+      "tag": "Templates",
+      "patterns": [
+      "Why use templates?",
+      "What are templates?"
+      ],
+      "responses": [
+      "Templates help you write reports faster by providing a pre-designed structure without the need for extra design or graphs. This saves you time and effort. I hope this explanation helps! <3"
+      ]
+      },
+      {
+        "tag": "Edit Report",
+        "patterns": [
+        "How can I edit my previous report?",
+        "How can I edit a report?",
+        "Edit report"
+        ],
+        "responses": [
+        "In the 'My Reports' section of your homepage, you can search for the report you want to edit. Click on the report and make the necessary changes. Once you've finished editing, save the changes, and the updated report will be saved in this section."
+        ]
+        },
+        {
+        "tag": "Account Management",
+        "patterns": [
+        "How can I change my profile information?",
+        "How can I edit my data?",
+        "Change email and password"
+        ],
+        "responses": [
+        "In your navbar, you'll see your profile icon on the right. Click on it, and you'll see your profile information. Click the 'Edit' button to go to the edit section, where you can edit your email or password, or both."
+        ]
+        },
+        {
+          "tag": "Name",
+          "patterns": [
+          "What is your name?",
+          "Who are you?",
+          "??"
+          ],
+          "responses": [
+          "Hey, my name is Mzmz. i dont have a specific  age ,  I'm here to help you in this system. I hope you find what you need and I'm always here for you."
+          ]
+          },
+          {
+            "tag": "system_natural",
+            "patterns": [
+            "What is the system?",
+            "What is this system for?",
+            "What is this?",
+            "What does your report mate provide?",
+            "What does this website do?",
+            "How does your system help in writing reports?",
+            "What are the benefits of this website?",
+            "What can I get from this website?"
+            ],
+            "responses": [
+            "Our system is a reporting system in the medical field, specifically focused on medical research and psychiatric treatment. The Report Mate gives you feature helps you type faster by providing next-word prediction with relevant suggestions in these specific fields. It also offers the necessary tools for creating your reports effectively."
+            ]
+            }
+    ]
+  }

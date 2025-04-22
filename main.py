@@ -20,7 +20,9 @@ model2 = load_model('Medical_Research.h5')
 
 tokenizer = pickle.load(open('token.pkl', 'rb'))
 
-
+@app.route("/", methods=['GET'])
+def index():
+    return "Flask API is running on Vercel ✅"
 # Define the API endpoint
 @app.route('/predict', methods=['POST'])
 def predict():

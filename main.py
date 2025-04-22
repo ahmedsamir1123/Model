@@ -7,7 +7,7 @@ import pickle
 from tensorflow.keras.models import load_model
 import os
 from chat import get_response 
-
+import requests
 
 app = Flask(__name__)
 CORS(app)
@@ -15,8 +15,18 @@ CORS(app)
 
 # Load the GrU  model
 # Load the model and tokenizer
-model = load_model('Next_word_predictionModel.h5')
+url2 = 'https://drive.google.com/uc?id=1cr6HNDs-xY78dcCUkXnZvo-KSTiXc6zg'
+r = requests.get(url2, allow_redirects=True)
+open('Medical_Research.h5', 'wb').write(r.content)
+from tensorflow.keras.models import load_model
 model2 = load_model('Medical_Research.h5')
+
+url1 = 'https://drive.google.com/uc?id=1DDAuQUM2imMxEjb0Uo45RDh5RAqm0_ue'
+rr = requests.get(url1, allow_redirects=True)
+open('Next_word_predictionModel.h5', 'wb').write(rr.content)
+from tensorflow.keras.models import load_model
+model = load_model('Next_word_predictionModel.h5')
+# model2 = load_model('Medical_Research.h5')
 
 tokenizer = pickle.load(open('token.pkl', 'rb'))
 
